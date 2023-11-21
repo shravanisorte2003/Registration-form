@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Registration Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="form-title">Registration</h1>
+    <form action="#">
+      <div class="main-user-info">
+        <div class="user-input-box">
+          <lable for="fullName">Full Name</lable>
+          <input type="text" id="fullName" name="fullName" placeholder="Enter full name" />
+        </div>
+        <div class="user-input-box">
+          <lable for="username">User Name</lable>
+          <input type="text" id="username" name="username" placeholder="Enter Username" />
+        </div>
+        <div class="user-input-box">
+          <lable for="email">Email</lable>
+          <input type="text" id="email" name="email" placeholder="Enter Email" />
+        </div>
+        <div class="user-input-box">
+          <lable for="phoneNumber">Phone Number</lable>
+          <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number" />
+        </div>
+        <div class="user-input-box">
+          <lable for="password">Password</lable>
+          <input type="text" id="password" name="password" placeholder="Enter Password" />
+        </div>
+        <div class="user-input-box">
+          <lable for="confirmPassword">Confirm Password </lable>
+          <input type="text" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" />
+        </div>
+      </div>
+      <div class="gender-details-box">
+        <span class="gender-title">Gender</span>
+        <div class="gender-category">
+          <input type="radio" name="gender" id="male">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female">
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="other">
+          <label for="other">Other</label>
+        </div>
+      </div>
+      <div class="form-submit-btn">
+        <a href="register.html">
+          <input type="submit" value="Register" onclick="Register()">
+          <script>
+            function Register() {
+              alert("You have successfully registered!");
+            }
+          </script>
+        </a>
+      </div>
+    </form>
+    <script src="script.js"></script>
+
+    <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+
+
+    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
